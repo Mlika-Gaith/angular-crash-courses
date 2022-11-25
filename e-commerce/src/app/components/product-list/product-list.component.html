@@ -1,8 +1,13 @@
 <h2>Products</h2>
 <div *ngFor="let product of products">
   <!--[title] = "product.name + 'details'" is for when you hover over the link a title is displayed-->
+  <!--without brackets the right-hand side is evaluated as a string-->
   <h3>
-    <a [title]="product.name + ' details'">{{ product.name }}</a>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+      >{{ product.name }}</a
+    >
   </h3>
   <p *ngIf="product.description">Description : {{ product.description }}</p>
   <button type="button" (click)="share()">Share</button>
