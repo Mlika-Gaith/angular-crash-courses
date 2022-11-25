@@ -82,6 +82,7 @@ button {
   background-color: #1976d2;
   color: white;
   border: none;
+  margin: 10px 0px;
 }
 
 .button:hover,
@@ -142,5 +143,11 @@ app-top-bar h1 {
   background-color: #eeeeee;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

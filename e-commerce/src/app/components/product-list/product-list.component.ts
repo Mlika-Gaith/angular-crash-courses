@@ -12,4 +12,8 @@ export class ProductListComponent {
   share() {
     window.alert('The product has been shared!');
   }
+  // when the child component emits notify event this is executed
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
 }
