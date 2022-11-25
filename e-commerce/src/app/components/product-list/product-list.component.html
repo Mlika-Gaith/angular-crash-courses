@@ -1,1 +1,9 @@
 <h2>Products</h2>
+<div *ngFor="let product of products">
+  <!--[title] = "product.name + 'details'" is for when you hover over the link a title is displayed-->
+  <h3>
+    <a [title]="product.name + ' details'">{{ product.name }}</a>
+  </h3>
+  <p *ngIf="product.description">Description : {{ product.description }}</p>
+  <button type="button" (click)="share()">Share</button>
+</div>
