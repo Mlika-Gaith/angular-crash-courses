@@ -1,0 +1,5 @@
+<h2>Your Cart</h2>
+<div *ngFor="let cartItem of cartItems" class="cart-item">
+  <span>{{ cartItem.name }}</span>
+  <span>{{ cartItem.price | currency }}</span>
+</div>
