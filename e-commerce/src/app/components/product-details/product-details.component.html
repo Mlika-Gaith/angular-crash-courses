@@ -4,4 +4,7 @@
   <!-- currency is an angular pipe that transforms price which is a number into a currency-->
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
+  <div>
+    <button type="button" (click)="addToCart(product)">Add To Cart</button>
+  </div>
 </div>
